@@ -610,7 +610,9 @@ function createWorker(self) {
             }
             if (types["opacity"]) {
                 rgba[3] = (1 / (1 + Math.exp(-attrs.opacity))) * 255;
+		console.log("Got the opacity!");
             } else {
+		console.log("Didn't read opacity.");
                 rgba[3] = 255;
             }
         }
